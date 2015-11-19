@@ -1,0 +1,5 @@
+Merge sort - useful for linked lists
+Heapsort - very good on sorting array
+Quick sort - has a good average-case behaviour
+Insertion sort - is good if you have a set that it is almost sorted
+Bubble sort - good for short arrays, O(n^2)

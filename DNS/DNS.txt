@@ -1,0 +1,10 @@
+DNS: how DNS works?
+
+1. Resolving naming server
+2. Root name server
+3. TLD name server
+4. Authorative name server
+
+
+https://howdns.works/ep2/
+https://www.youtube.com/watch?v=72snZctFFtA

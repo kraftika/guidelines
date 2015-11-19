@@ -1,0 +1,7 @@
+mvn -DBUILD_ID="5555" -Dtest="ContentDashboard.Cards.*" -Denvironment.config.file=config/environments/jupiter02/environment.properties -Dtarget=jupiter02 verify
+
+mvn -DBUILD_ID="5555" -Dtest="PublishCardsTest" -Denvironment.config.file=config/environments/jupiter02/environment.properties -Dtarget=jupiter02 verify
+
+mvn -DBUILD_ID="5555" -Dthucydides.tags="feature:publishcards,groups:smokex" -Denvironment.config.file=config/environments/jupiter02/environment.properties -Dtarget=jupiter02 verify
+
+mvn -DBUILD_ID="5555" -Dtest="PublishCards*" -Denvironment.config.file=config/environments/jupiter02/environment.properties -Dtarget=jupiter02 verify

@@ -1,0 +1,25 @@
+Function declaration:
+
+function exampleFunc() {
+  ...
+}
+
+A Function Declaration (abbreviated form is FD) is a function which:
+
+- has an obligatory name;
+- in the source code position it is positioned: either at the Program level or directly in the body of another function (FunctionBody);
+- is created on entering the context stage;
+- influences variable object;
+
+
+A Function Expression (abbreviated form is FE) is a function which:
+
+var foo = function () {
+  ...
+};
+
+- created on
+- in the source code can only be defined at the expression position;
+- can have an optional name;
+- it’s definition has no effect on variable object;
+- and is created at the code execution stage.

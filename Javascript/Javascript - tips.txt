@@ -1,0 +1,52 @@
+Javascript - tips
+
+
+1. function documentTitle(theTitle)
+  theTitle  = theTitle || "Untitled Document";
+}
+
+JavaScript Falsy Values: null, false, 0 undefined, NaN, and “” (this last item is an empty string).
+— Note that Infinity, which is a special number like NaN, is truthy; it is not falsy, while NaN is falsy.
+
+2.
+
+function isAdult(age) {
+  if (age && age > 17) {
+  return true;
+}
+​else {
+  return false;
+  }
+}
+
+function isAdult(age) {
+   return age && age > 17 ;
+}
+
+3.
+
+if (userName) {
+  logIn (userName);
+}
+ else {
+   signUp ();
+}
+
+userName && logIn (userName) || signUp ();
+
+Note: it is used the same parameter: userName
+
+4.
+
+var userID;
+​if (userName && userName.loggedIn) {
+  userID = userName.id;
+}
+​else {
+  userID = null;
+}
+
+var userID = userName && userName.loggedIn && userName.id
+
+
+

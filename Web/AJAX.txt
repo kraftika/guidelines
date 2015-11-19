@@ -1,0 +1,16 @@
+- AJAX = combination of Javascript and XML
+- AJAX doesn;t require HTTP request
+- It is written in Javascript and it uses XMLHTTPRequest Api to mainupulate XML data
+to and from web server through HTTP
+- It is used for form validation, filtering data etc. It is not used for all web page
+content. It is used the information is changed frequently
+- The page doesn;t reload so, the URL remains the same. Back and refresh are the main problem
+of the AJAX but there is a solution using iFrame.
+- If the javascript is disabled then it might be a problem. It depends on browser
+settings.
+- There is a problem on network because the application server must serve continously
+http responses.
+- The speed cannot be improved if the response is small. It can be use a client-side
+cache written in Javascript because it is more effective than compression.
+- AJAX doesn't require XML as XMLHTTPRequest object
+- Are vulnerable to the XSS avoid by implementing HTTP Only Cookies and not allowing input from HTML

@@ -1,0 +1,130 @@
+Behavioral questions:
+- https://www.themuse.com/advice/how-to-answer-the-31-most-common-interview-questions?ref=long-reads-0
+
+Algorithms and data structures
+- Big O notation
+- Linked list, double linked list implementations
+	- insert, delete, search in less than 5 mins
+- Stacks and queues
+	- both implementations
+- BST -
+- Graphs
+- Recursion
+
+http://elementsofprogramminginterviews.com/Tools/
+geekfor geeks
+
+Operating systems:
+- mutex
+- semaphores
+- count downs
+- condition variables
+- locks
+
+Grep command
+
+Behaviour questions:
+- read about these quetions
+
+
+CSS
+- how to do a cursor on images?
+- how to increse/descres the font using range input?
+
+- How stock share works?
+
+Unicode
+- http://betterexplained.com/articles/unicode/
+
+Regular expressions
+-
+
+Performance
+- Octane faq
+- Interview Bit
+
+Javascript
+- Closures
+- Understanding "Prototypes"
+- Recipes with AngularJS
+- Javascript in 10 mins
+- Equality in Javascript
+- Typeof vs instanceof
+- Undefined and null
+- Scopes and namespaces
+- Shadow DOM
+- Polymer
+
+AngularJS
+- directives
+	- input with validation
+	- directive depends otther directive
+	- input validation with error icon
+	- isolated scopes
+		- understand isolated scopes
+	- directives with @, =, &
+-style guide
+
+- controllers
+- consume services using q, promises
+- services
+
+Data structures
+- simple linked list
+	- big O, complexity
+	- insert
+	- search
+	- delete
+- double linked list
+	- insert
+	- search
+	- delete
+- stack
+- queue
+
+Algorithms
+- Searching
+	- binary sear
+- Sorting
+	- merge sort
+		- Complexity, Big O
+		- optimi
+	- quick sort
+	- heap sort
+	- bubble sort
+- Recursion
+
+Multithreading
+- Samples of concurrency
+
+Bash
+- What is the significance of $#? => shows the arguments passed to the script
+- What is the difference between $* and $@ => 1. treats input as separtae arguments and 2. $* will consider the entire set of positional parameters as a single string
+- Arguments can be accessed using $1, $2, $3
+- What is the difference between $$ and $!? => 1. $$ gives the process id of the currently executing process
+
+Best practices about interviews:
+- Learn Big O - it is a must.
+- Sorting - no bubble sort. Quick sort or merge sort. Any algorithm with at least n * log (n)
+- Hash tables - how they work, how to implement
+- Trees - binary trees, construction, traversal and manipulation algorithms
+- Graphs - how they are organized (objects and pointers, matrix, adjacent list). BFS And DFS
+
+You must have:
+
+- example of an interesting technical problem you solved
+- example of an interpersonal conflict you overcame
+- example of leadership or ownership
+- story about what you should have done differently in a past project
+- piece of trivia about your favorite language, and something you do and don't like about said language
+- question about the company's product/business
+- question about the company's engineering strategy (testing, Scrum, etc)
+
+Operating systems:
+- threads and concurency issues
+- mutex and semaphores. how they work.
+- deadlock and livelock and how to avoid them
+- how an operating system is initiated
+
+
+

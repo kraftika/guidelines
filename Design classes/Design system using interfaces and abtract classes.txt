@@ -1,0 +1,11 @@
+Design system using interfaces and abtract classes
+
+1. Decide what will be your classes and their memebers
+2. How they will communicate with each other
+3. Find out common things above classes
+4. Then see if you can take all those common things and put them into other classes;
+these will be parent classes. They can be or connot be abstract classses.
+5. Then see if each method of yuor child class requires its own implementation
+6. If you find those method then make those methods as abstract or pure virtual
+7. If every method of your parent class is abstract or pure virtual, then it would
+be better to make these classes as interface.

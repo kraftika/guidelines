@@ -1,0 +1,14 @@
+Javascript intermediate
+
+— Simple Data Types, Reference Types, Operators, and Objects (in Detail)
+— Variable Scope and Hoisting, Expressions, Statements, and JSON
+— DOM, The Window Object, JavaScript Events, and Handling Errors
+— Functions, Function Properties, Function Expression, and AJAX
+— Basic Regular Expressions and Modules
+
+Intermediate and Advanced JavaScript topics include:
+— Debugging JS in the browser, Object-oriented JavaScript
+— Advanced Functions: Callback functions, Bind, Curry, IIFE (Immediately Invoked Function Expression)
+— Asynchronous execution, timers, Prototypal Inheritance, and Closures
+— JavaScript Design Patterns, Object Creation Patterns, and Code Reuse Patterns
+— Code Minification and Compression, Loading Strategies, and Dependency Management

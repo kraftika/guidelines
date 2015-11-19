@@ -1,0 +1,92 @@
+Pay attention that you can check a variable or a property object
+
+Declared, defined, initialized
+
+declared? - it has var before or
+defined? - if(typeof foo !== 'undefined')
+initialized? - compare with undefined
+
+undefined is a built-in Javascript type.
+undefined reffers to the state of the object.
+
+undefined is disttinct from null.
+
+Null represents the intentional absence of value.
+Null refers to the content of the variable.
+
+ReferenceError indicates that an invalid reference was detected.
+
+var a;
+alert(b) => Reference Error, be is not defined
+
+
+var abc;
+alert(abc); => undefined
+
+How to check that a varibale is undeclared?
+Using var word before variable name.
+
+Or
+
+Use typeof If you are not sure that the variable is declared or not
+if( typeof foo !== 'undefined' ) {
+    // foo could get resolved and it's defined
+}
+
+
+var declared = 1;
+undeclared = 1;
+
+(Object.getOwnPropertyDescriptor(window, 'declared')).configurable     // false
+(Object.getOwnPropertyDescriptor(window, 'undeclared')).configurable   // true
+
+Configurable property is true then the property can be deleted using delete operator and
+defineProperty can be used
+
+if( value ) {
+  /* I will be called if the value is not:
+  null
+  undefined
+  NaN
+  empty string
+  0
+  false
+}
+
+Use typeof If you are not sure that the variable is declared or not
+if( typeof foo !== 'undefined' ) {
+    // foo could get resolved and it's defined
+}
+
+
+if (foo === undefined) { /* not initialized */ }
+
+
+typeof null == 'object' => object
+typeof NaN => number
+
+Javascript attaches types to values, not variables.
+All variables are initialized with undefined type.
+Trying to access a varible that it is not declared will raise Reference Error unless
+you use type operator.
+undefined is not a reserved word.
+For objects, accessing a property that it is not declared it will return undefined.
+
+// Note that this doesn't quite work for objects
+function isUndefined(value) {
+    return typeof value === 'undefined';
+}
+
+var a, x = 4;
+
+isUndefined(a); // true
+isUndefined(x); // false
+
+To check for undefined-valued object keys, you could do something like this:
+key in obj && typeof obj.key === 'undefined';
+// - or -
+obj.hasOwnProperty(key) && typeof obj.key === 'undefined';
+
+More details here:
+https://www.quora.com/What-is-the-best-way-to-check-if-a-property-or-variable-is-undefined
+

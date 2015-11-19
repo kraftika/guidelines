@@ -1,0 +1,31 @@
+Google interview
+
+Operating systems:
+- Processes
+- Threads
+- Concurrency issues
+- Locks
+- Mutex
+- Semaphore
+- Monitor
+
+- How all of these stuff works?
+- What resource a process needs to run?
+- What resource a thread needs to run?
+- In what context is possible the switch?
+
+Graphs:
+- how to represent a graph? pointers, objects, matrix, adjacency list. what are pro and cons?
+- BFS, DFS
+
+Trees:
+- tree construction
+- traversal (inorder, postorer, preorder)
+- manipulation algorithms
+- binary trees, n-ary trees
+- balanced tree
+- red/black tree
+
+Hastables
+-
+

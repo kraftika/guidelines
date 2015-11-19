@@ -1,0 +1,108 @@
+Hoisting:
+
+1. Simple case - Understood
+
+// Code saved in file:
+
+function containsHoisting() {
+    console.log(hoistedVariable);
+    var hoistedVariable = "I was hoisted!";
+}
+
+containsHoisting(); // logs undefined
+
+2. Hoisting on function level - Understood
+
+In Javascript scopes are defined at function level. Many other languages
+define scope at a block level (as in an if block or for loop). This is an
+important difference to remember.
+
+var hoistedVariable = 1;
+
+function scopingFunction() {
+    if (!hoistedVariable) {
+        var hoistedVariable = 10;
+    }
+    return hoistedVariable;
+}
+
+scopingFunction(); // returns 10
+
+Why? Note that the global hoistedVariable gets completely overwritten by the
+local hoistedVariable as declared in scopingFunction. So at the point of the
+if conditional hoistedVariable is undefined and not 1.
+
+Function hoisting works different than variables.
+
+3. Functions are hoisted after variables. Function Declaration Overrides
+Variable Declaration When Hoisted
+
+function containingFunction() {
+    var hoisted = "I'm the variable";
+    function hoisted() {
+        return "I'm the function";
+    }
+    return hoisted(); // results in a TypeError
+}
+containingFunction()
+
+4. What happens is the variable name is identical with the function name?
+
+// Both the variable and the function are named myName​
+​var myName; 
+​function myName () {
+console.log ("Rich");
+}
+​
+​// The function declaration overrides the variable name​
+console.log(typeof myName); // function
+
+But, if teh variable is declared then the type is string
+
+var myName = "Richard"; // This is the variable assignment (initialization) that overrides the function declaration.​
+​
+​function myName () {
+console.log ("Rich");
+}
+​
+console.log(typeof myName); // string
+
+Note: Javascript doesn't have block-scope level. It is has function level scope.
+Only functions create new scope. Blocks DO NOT create scopes.
+
+#include <stdio.h>
+int main() {
+  int x = 1;
+  printf("%d, ", x); // 1
+  if (1) {
+    int x = 2;
+    printf("%d, ", x); // 2
+  }
+  printf("%d\n", x); // 1
+}
+
+var x = 1;
+console.log(x); // 1
+if (true) {
+  var x = 2;
+  console.log(x); // 2
+}
+console.log(x); // 2
+
+So, functions declarations and variables declarations are hoisted.
+
+The next example:
+
+function test() {
+  foo(); // TypeError "foo is not a function"
+  bar(); // "this will run!"
+  var foo = function () { // function expression assigned to local variable 'foo'
+    alert("this won't run!");
+  }
+  function bar() { // function declaration, given the name 'bar'
+    alert("this will run!");
+  }
+}
+test();
+
+Only function declaration are hoisted.

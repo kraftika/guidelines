@@ -1,0 +1,59 @@
+Basic centering:
+Centering a text:
+  - text-align: center;
+Centering a block of text or image
+  - margin-left: auto
+  - margin-top: auto
+  width: 6em
+Or if you would like to center an image but, the text is not aligned
+  - display: block
+  - margin-left: auto;
+  - margin-auto: auto;
+Centering vertically:
+  - min-height: 10em
+  - display: table-cell;
+  - vertical-align: middle
+Centerign vertically in CCS3
+  - container (e.g. div)
+      - height 10em
+      - position: relative
+  - child
+      - margin: 0;
+      - position: absolute
+      - top: 50%
+      - transform: translate(0, -50%);
+Centerign vertically and horizaontally in CCS3
+  - container (e.g. div)
+      - height 10em
+      - position: relative
+  - child
+      - margin: 0;
+      - position: absolute
+      - top: 50%
+      - left 50%
+      - margin-right: -50%
+      - transform: translate(-50%, -50%);
+
+
+1. parent
+    text-align: center
+   child
+    display: inline-block;
+2. child
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+3. parent - you have to know the dimension of the image
+    position: relative
+   child
+    position: absolute
+    left: 50%
+    top: 50%
+    margin-left: -200px (half of the image)
+    margin-top: -200px (half of the image)
+4. parent - you have to know the dimension of the image
+    position: relative
+   child
+    position: absolute
+    left: 50%
+    top: 50%
+    transform(translate(50%, 50%))

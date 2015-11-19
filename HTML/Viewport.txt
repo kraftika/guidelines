@@ -1,0 +1,13 @@
+Viewport => ClientWidth and ClientHeight
+  - they don't include scrollbars; use innerWidth and innerHeight;
+
+Browser window size => window.outerWidth and window.outerHeight
+
+
+Screen resolution:
+  - real resolution => window.screen.height and window.inner.width
+  - available resolution => window.screen.availHeight and window.screen.availWidth
+
+
+Document size
+  - document.body.clientWidth and document.body.clientHeight

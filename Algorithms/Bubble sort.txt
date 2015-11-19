@@ -1,0 +1,22 @@
+Bubble sort: compare adjacent elements and find the correct position.
+
+5 4 3 2 1
+
+5 > 4 => swap
+
+4 5 3 2 1
+
+5 > 3 => swap
+
+4 3 5 2 1
+
+5 > 2 => swap
+
+4 3 2 5 1
+
+5 > 1 => swap
+
+4 3 2 1 5 - 5 is at the correct position
+
+More details: https://www.youtube.com/watch?v=y_Nuui4Qf-k
+

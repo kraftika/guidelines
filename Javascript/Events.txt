@@ -1,0 +1,48 @@
+Events
+
+You, the web developer, can choose whether to register an event handler in the
+capturing or in the bubbling phase. This is done through the addEventListener()
+method explained on the Advanced models page. If its last argument is true the
+event handler is set for the capturing phase, if it is false the event handler is set for the bubbling phase.
+
+addEventListener(eventType, function(), false) = > bubbling phase
+addEventListener(eventType, function(), true) = > capturing phase
+
+element1 ---
+  element2 ---
+
+  bubbling phase => event1 fires the last
+  capturing phase => event2 fires the last
+
+element1.addEventListener('click',doSomething2,true)
+element2.addEventListener('click',doSomething,false)
+
+               / \
+---------------| |-----------------
+| element1     | |                |
+|   -----------| |-----------     |
+|   |element2  | |          |     |
+|   -------------------------     |
+|        Event BUBBLING           |
+-----------------------------------
+
+               | |
+---------------| |-----------------
+| element1     | |                |
+|   -----------| |-----------     |
+|   |element2  \ /          |     |
+|   -------------------------     |
+|        Event CAPTURING          |
+-----------------------------------
+
+
+Cancel the event in Microsoft model;
+- window.event.cancelBubble = true
+
+This stops all propagation of the event in the bubbling phase
+- e.stopPropagation()
+
+How do you know which HTML element is currently handling the event?
+To solve this problem W3C has added the currentTarget property. It contains a
+reference to the HTML element the event is currently being handled by: exactly
+what we need. Unfortunately the Microsoft model doesn’t contain a similar property.

@@ -1,0 +1,41 @@
+How to delete value from an array
+
+- Use splice() to remove arbitrary item
+
+var array = ["a", "b", "c"];
+> var index = 1;
+> array.splice(index, 1);
+[ 'b' ]
+> array;
+[ 'a', 'c' ]
+
+
+If you're always interested in removing the first or the last item then you have an alternative solution. The methods shift() and pop() exist precisely for this purpose.
+
+var array = ["a", "b", "c"];
+> array.shift();
+'a'
+> array;
+[ 'b', 'c' ]
+> var array = ["a", "b", "c"];
+> array.pop();
+'c'
+> array;
+[ 'a', 'b' ]
+
+
+Using delete creates empty spots
+
+var array = ["a", "b", "c"];
+> delete array[1];
+true
+> array;
+[ 'a', , 'c' ]
+> array.length
+3
+
+Remove <what>
+An item array.splice(index, 1)
+First item  array.shift()
+Last item array.pop()
+What about delete?  Try to avoid delete, causes sparse arrays.
