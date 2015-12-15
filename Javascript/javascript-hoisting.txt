@@ -1,3 +1,17 @@
+Functions are hoisted prior to variables. 
+Follow the next example:
+----------------
+showState();            // output: Ready
+
+function showState() {
+  console.log("Ready");
+} 
+
+var showState = function() {
+  console.log("Idle");
+};
+----------------
+
 Hoisting:
 
 1. Simple case - Understood
