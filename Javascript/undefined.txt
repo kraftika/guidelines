@@ -1,3 +1,27 @@
+###Explained ReferenceError, Type Error
+
+* A Reference is considered unresolvable if its base value is undefined
+'''javascript
+var foo;
+foo.bar; //TypeError (base value, foo, is undefined)
+bar.baz; //ReferenceError (bar is unersolvable)
+undefined.foo; //TypeError (base value is undefined)
+```Javascript
+
+In Javascript (Undefined) is Type, undefined value, undefined variable
+- undefined Type is built in Javascript
+- undefiend value is primitive
+- undefined variable is => typeof undefined;
+
+Null is primitive.
+
+Reference error means invalid reference has been detected.
+
+Examples:
+alert(foo); => foo is not defined
+
+
+
 Pay attention that you can check a variable or a property object
 
 Declared, defined, initialized

@@ -1,3 +1,53 @@
+Asynchronous events run in the event loop. If an event occurs then it will get
+into Event loop. Event loop checks the queue and processes events, executes functions.
+
+It is used the event listener to atatch an event to the browser.
+
+DOM mutation events are synchronous.
+onclick inline event: you can have only one event assigned and poor separation
+between HTML and javascript
+
+1. Which events are triggered?
+2. How do I register an event?
+  - inline
+  - traditional
+    => element.onclick = doSomething
+    => it contains only
+    => Example
+      element.onclick = startDragDrop;
+      element.onclick = spyOnUser;
+      The second event overrides the first registration
+  - w3C
+  - Microsoft
+    element.attachEvent('onclick',doSomething)
+3. How do I prevent the default action?
+  - return false from the script handling
+4. If an element and one of its ancestors have an event handler for the same
+event, which one should fire first?
+  - Two event orders bubbling and capturing pahse
+
+
+setTimeout(function() {...}, 0) => on the nearest timer tick. Note, that’s not immediately.
+
+There are four models for registering event handlers. inline, traditional, W3C and Microsoft.
+
+W3C
+It offers a simple way to register as many event handlers as you like for the same event on one element.
+  element.addEventListener('click',startDragDrop,false)
+  element.addEventListener('click',spyOnUser,false)
+You don't know which event is executed first
+
+How do I prevent the default action of the event?
+If you return false from the event handling script, the default action
+(following the link, submitting the form) is prevented
+
+You can find out what:
+  - was event type
+  - was the target element currentTarget or srcElement
+  - was the position of the mouse
+  - was the key pressed
+  - was the mouse button
+
 Events
 
 You, the web developer, can choose whether to register an event handler in the
