@@ -1,0 +1,40 @@
+1. What can be cached?
+
+- Logos and brand images
+- Non-rotating images in general (navigation icons, for example)
+- Style sheets
+- General Javascript files
+- Downloadable Content
+- Media Files
+
+2. Never cache the following:
+
+- Assets related to sensitive data (banking info, etc.)
+- Content that is user-specific and frequently changed
+
+3. Be careful when you cache the following:
+
+- HTML pages
+- Rotating images
+- Frequently modified Javascript and CSS
+- Content requested with authentication cookies
+
+
+The cache is stored in: browser, intermediary proxies, reverse cache.
+
+Caching Headers
+
+1. Expire
+2. Cache-Control
+  - no cache => any cached must be revalidate on each request
+  - no store => the content cannot be cached
+  - public => it can be cached by the browser and other intermediate caches
+  - private => may be stored by the user's browser
+  - max-age=60 => the response can be cached and reused for the next 60s
+  - max-revalidate
+  - proxy-revalidate
+  - no transform
+3. Etag
+4. Last-modified
+5. Content-Length
+6. Vary

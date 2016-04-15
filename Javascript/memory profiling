@@ -1,0 +1,15 @@
+Objects:
+- shallow - (self) the memory of a single object
+- retained - (self + descendants) the memory of all the objects (chained objects)
+- retained === shallow => string, boolean, number
+
+new operator gets space from memory pool young objects
+
+1. Capture snapshot
+2. Four views of snapshots:
+  - Summary
+  - Comparison
+  - Containment
+  - Doiminators
+3. Compare two snapshots (maybe three snapshots are needed)
+

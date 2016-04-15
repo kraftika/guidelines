@@ -1,0 +1,35 @@
+Use case 1:
+
+abc; => console
+
+Reference Error: abc is not defined
+
+Explanation: References which are neither properties or variables are by definition unresolvable and will throw a ReferenceError.
+JavaScript sees no explicit base value and therefore looks up the VariableObject for a property with reference name ‘foo’. Finding none it determines ‘foo’ has no base value and throws a ReferenceError
+
+Use case 2:
+
+var abc;
+abc => console
+
+undefined;
+
+Use case 3:
+
+abc.efg => console
+
+Reference Error: abc is not defined - JS cannot solve the reference efg of undefined abc
+
+Use case 4:
+
+var abc;
+abc.efg => console
+
+Type Error: Cannot read property 'efg' of undefined
+
+Use case 5:
+
+var abc = 4;
+abc.mem => console
+
+alert(meenme); => Reference Error: meenme is not defined
