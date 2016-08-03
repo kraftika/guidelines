@@ -1,0 +1,12 @@
+Inheritance happens in js through delegation: 
+ -> var genericAnimal = Object.create(null); // __prot__ = null;
+ 	var rodent = Object.create(genericAnimal);  // __proto__ = genericAnimal;
+ 		rodent.size = 'S';
+
+ 	var capybara = Object.create(rodent);
+ 	print capybara.size => S // capybara doesn't have size property. So, it looks in capybara.__proto__. if not then it looks 						   // in capybara.__proto__.__proto__ known as prototype chain
+
+
+-------
+Extends Javascript Math object 
+var myMath = Object.create(Math); 
